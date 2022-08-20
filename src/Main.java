@@ -10,9 +10,13 @@ public class Main {
         String fullNameUp = fullName.toUpperCase();
         System.out.println("ФИО сотрудника для составления отчета - " + fullNameUp);
         //Task 3
-        String fullNameNew = "Иванов Семён Семёнович";
+        /* String fullNameNew = "Иванов Семён Семёнович";
         fullNameNew = fullNameNew.replace('ё', 'е');
-        System.out.println(fullNameNew);
-
+        System.out.println(fullNameNew); */
+        String fullNameNew = "Иванов Семён Семёнович";
+        if (fullNameNew.contains("ё")) {
+            fullNameNew = fullNameNew.replace('ё', 'е');
+        }
+        System.out.println("Данный ФИО сотрудника - " + fullNameNew);
     }
 }
